@@ -31,9 +31,24 @@ h1 {
 }
 
 .description ul {
-    /*list-style-type: none;  Supprime les puces de la liste */
-    padding-left: 0; /* Supprime le décalage gauche par défaut */
-    margin-left: 0; /* Enlève la marge gauche supplémentaire */
+    /* list-style-type: none; Supprime les puces de la liste */
+    padding-left: 0; /* Enlève le retrait à gauche par défaut */
+    margin-left: 0; /* Enlève la marge à gauche */
+}
+
+.description li {
+    margin-bottom: 10px;
+    padding-left: 20px; /* Ajoute un léger décalage pour les puces */
+    text-indent: -20px; /* Crée un retrait accroché */
+    position: relative;
+}
+
+.description li::before {
+    content: "•"; /* Ajoute une puce personnalisée */
+    position: absolute;
+    left: 0;
+    color: #2e7d32; /* Couleur de la puce (ajustable) */
+    font-size: 1.2em; /* Taille de la puce (ajustable) */
 }
 
 /* Styles pour les sections spécifiques */
