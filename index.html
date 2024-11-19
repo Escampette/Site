@@ -1,51 +1,136 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Cliquable</title>
-    <style>
-        /* Conteneur principal */
-        .image-container {
-            position: relative;
-            width: 800px; /* Ajuste la largeur selon les besoins */
-            margin: 0 auto;
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-        
-        /* Style des zones cliquables */
-        .clickable-area {
-            position: absolute;
-            display: block;
-            background-color: rgba(255, 255, 255, 0.2); /* Couleur semi-transparente pour visualiser les zones */
-            cursor: pointer;
-        }
-
-        /* Zones cliquables */
-        .area-mi-confits { top: 500px; left: 150px; width: 200px; height: 200px; }
-        .area-cuir-sans-sucre { top: 500px; left: 450px; width: 200px; height: 200px; }
-        .area-cuir-sucre { top: 765px; left: 575px; width: 200px; height: 200px; }
-        .area-boites { top: 765px; left: 15px; width: 200px; height: 200px; }
-        .area-fraises { top: 765px; left: 300px; width: 200px; height: 200px; }
-        .area-contact { top: 10px; left: 0px; width: 100%; height: 200px; }
-    </style>
-</head>
-<body>
-
-<div class="image-container">
-    <img src="IMG-20241118-WA0000.jpg" alt="Le Verger de l'Escampette">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Le Verger de L’Escampette</title>
+        <!-- Lien vers le fichier CSS externe -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
     
-    <!-- Zones cliquables -->
-    <a href="mi_confits.html" class="clickable-area area-mi-confits" title="Mi Confits"></a>
-    <a href="cuir_sans_sucre.html" class="clickable-area area-cuir-sans-sucre" title="Cuir sans Sucre"></a>
-    <a href="cuir_sucre.html" class="clickable-area area-cuir-sucre" title="Cuir Sucre"></a>
-    <a href="boites.html" class="clickable-area area-boites" title="Boîtes"></a>
-    <a href="fraises.html" class="clickable-area area-fraises" title="Fraises"></a>
-    <a href="contact.html" class="clickable-area area-contact" title="Contact"></a>
-</div>
+        <!-- Carrousel d'images -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9">     
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9">             
+        </div>
+            <!-- Menu de navigation sous le carrousel -->
+            <div class="menu">
+                <ul>
+                    <li><a href="mi_confits.html" class="area-mi-confits" title="Mi Confits"><img src="confit.png" alt="Mi Confits"></a></li>
+                    <li><a href="cuir_sans_sucre.html" class="area-cuir-sans-sucre" title="Cuir sans Sucre"><img src="cuir fraise sans sucre.jpg" alt="Cuir sans Sucre"></a></li>
+                    <li><a href="cuir_sucre.html" class="area-cuir-sucre" title="Cuir Sucre"><img src="cuir fraises sucre.jpg" alt="Cuir Sucre"></a></li>
+                    <li><a href="boites.html" class="area-boites" title="Boîtes"><img src="boitetemp.png" alt="Boîtes"></a></li>
+                    <li><a href="fraises.html" class="area-fraises" title="Fraises"><img src="fraises.png" alt="Fraises"></a></li>
+                    <li><a href="contact.html" class="area-contact" title="Contact"><img src="2.jpg" alt="Contact"></a></li>
+                </ul>
+            </div>
+            <script src="script.js"></script>
+    
+    <!-- Contenu principal -->
+    <div class="content">
+        <!-- Titre de la section -->
+        <h1 class="section-title">Le Verger de L’Escampette c’est :</h1>
+
+        <!-- Description du verger -->
+        <div class="description">
+            <ul>
+                <li><strong>Près d’1,5 hectare de verger de petits fruits et arbres fruitiers en <span class="bio">Agriculture Biologique</span> et <span class="bio">Agroforesterie</span>.</strong></li>
+                <li><strong>1 équipe animée dans un projet ambitieux mais entraînant, novateur et écologiquement sain.</strong></li>
+                <li><strong>2 ânes pour travailler euh….. brouter les zones boisées, les intercultures et les futures zones de plantations.</strong></li>
+                <li><strong>Des milliers de plants de <span class="fraise">fraisiers</span>.</strong></li>
+                <li><strong>Des centaines de pieds de <span class="fraise">framboisiers</span>.</strong></li>
+                <li><strong>Des dizaines de pieds de groseillers, caseillers, cassissiers, amélanchiers,…</strong></li>
+                <li><strong>Mais aussi des arbres fruitiers tels que pommiers, poiriers, pruniers et figuiers.</strong></li>
+            </ul>
+        </div>
+
+        <!-- Localisation du verger -->
+        <div class="localisation">
+            <p><strong>Le Verger se situe à Val de Fier (Vallières sur Fier, 74).</strong></p>
+        </div>
+
+        <!-- Informations de contact -->
+        <div class="contact">
+            <p><strong>Pour tout renseignement ou commande, vous pouvez nous contacter au :</strong></p>
+            <p><strong>Téléphone :</strong> 07 89 53 11 66</p>
+            <p><strong>Email :</strong> <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a></p>
+            <p><strong>Ou suivre notre actualité sur Facebook.</strong></p>
+        </div>
+    </div>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Le verger de l'Escampette © 2024 Ferme Bio. Tous droits réservés.<br>Contact : 
+            <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a> - Tel : 07 89 53 11 66
+        </p>
+    </footer>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+       </div>
+       </div>
 
 </body>
 </html>
