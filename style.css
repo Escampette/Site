@@ -56,36 +56,29 @@ footer {
     color: #666;
 }
 
-/* Styles spécifiques pour les éléments de couleur */
+/* Exemple avec des valeurs HEX complètes */
 .fraise {
-    color: #b22222;
-    font-weight: bold;
+    color: #B22222; /* Rouge plus intense */
 }
 
 .sucre {
-    color: #d3d3d3;
-    font-weight: bold;
+    color: #D3D3D3; /* Gris clair */
 }
 
 .bio {
-    color: #006400;
-    font-weight: bold;
+    color: #006400; /* Vert foncé */
 }
 
 .framboise {
-    color: #9B2D20;
-    font-weight: bold;
+    color: #9B2D20; /* Framboise */
 }
 
 .muroise {
-    color: #6A2C7E;
-    font-weight: bold;
+    color: #6A2C7E; /* Mûre */
 }
 
 .email {
-    color: #b22222;
-    font-weight: bold;
-    text-decoration: none;
+    color: #B22222; /* Rouge pour l'email */
 }
 
 /* Style pour le carrousel */
