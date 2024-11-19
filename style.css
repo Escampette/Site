@@ -56,9 +56,106 @@ footer {
     color: #d3d3d3; /* Gris clair pour les termes relatifs au sucre */
     font-weight: bold;
 }
+.bio {
+    color: #006400; /* Vert foncé */
+    font-weight: bold;
+}
+.framboise {
+    color: #9B2D20; /* Framboise avec une touche de violet */
+    font-weight: bold;
+}
+
+.muroise {
+    color: #6A2C7E; /* Mûre claire */
+    font-weight: bold;
+}
+
 /* Styles pour l'email en rouge */
 .email {
     color: #b22222; /* Rouge foncé pour l'adresse e-mail */
     font-weight: bold;
     text-decoration: none; /* Supprime le soulignement si souhaité */
+}
+
+/* Style pour le carrousel */
+.carousel-container {
+    position: relative;
+    width: 100%; /* Ajuste la taille du carrousel en fonction de la largeur du conteneur */
+    overflow: hidden; /* Cache les images qui dépassent */
+}
+
+.carousel {
+    display: flex; /* Aligne les images sur une ligne */
+    transition: transform 0.5s ease; /* Transition pour un déplacement fluide */
+    will-change: transform; /* Optimise l'animation */
+}
+
+/* Style des images */
+.carousel img {
+    width: 100%; /* Les images prennent toute la largeur du conteneur */
+    height: 300px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: cover; /* Maintient l'aspect des images tout en remplissant l'espace */
+    display: block;
+}
+
+/* Animation automatique du carrousel */
+@keyframes carousel-animation {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/* Appliquez l'animation */
+.carousel {
+    animation: carousel-animation 24s infinite;
+}
+
+.menu {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Menu */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu a {
+    display: block;
+}
+
+.menu img {
+    width: 100px; /* Ajustez la taille des images selon votre préférence */
+    height: auto;
+    transition: transform 0.3s ease; /* Effet de transition pour agrandir l'image au survol */
+}
+
+.menu img:hover {
+    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
 }

@@ -1,93 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de [Nom du Produit]</title>
-    <style>
-        /* Styles de base */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-        }
-        header, footer {
-            background-color: #f4f4f4;
-            padding: 10px;
-            text-align: center;
-        }
-        header img {
-            width: 150px; /* Ajuster la taille si nécessaire */
-            margin-bottom: 10px;
-        }
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 1.8em;
-            color: #333;
-            text-align: center;
-        }
-        .product-image {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-        }
-        .description {
-            font-size: 1.1em;
-            margin: 20px 0;
-        }
-        .quantities {
-            font-size: 1.2em;
-            font-weight: bold;
-            text-align: center;
-            color: #555;
-            margin: 20px 0;
-        }
-        footer {
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nos cuir 100% fraises</title>
+        <!-- Lien vers le fichier CSS externe -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+        <!-- Carrousel d'images -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9">     
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9"> 
+                <img src="7.jpg" alt="Image 7">
+                <img src="8.jpg" alt="Image 8">
+                <img src="9.jpg" alt="Image 9">             
+        </div>
+            <!-- Menu de navigation sous le carrousel -->
+            <div class="menu">
+                <ul>
+                    <li><a href="mi_confits.html" class="area-mi-confits" title="Mi Confits"><img src="confit.png" alt="Mi Confits"></a></li>
+                    <li><a href="cuir_sans_sucre.html" class="area-cuir-sans-sucre" title="Cuir sans Sucre"><img src="cuir fraise sans sucre.jpg" alt="Cuir sans Sucre"></a></li>
+                    <li><a href="cuir_sucre.html" class="area-cuir-sucre" title="Cuir Sucre"><img src="cuir fraises sucre.jpg" alt="Cuir Sucre"></a></li>
+                    <li><a href="boites.html" class="area-boites" title="Boîtes"><img src="boitetemp.png" alt="Boîtes"></a></li>
+                    <li><a href="fraises.html" class="area-fraises" title="Fraises"><img src="fraises.png" alt="Fraises"></a></li>
+                    <li><a href="contact.html" class="area-contact" title="Contact"><img src="2.jpg" alt="Contact"></a></li>
+                </ul>
+            </div>
+            <script src="script.js"></script>
+    
+    <!-- Contenu principal -->
+    <div class="content">
+        <!-- Titre de la section -->
+        <h1 class="section-title">Nos cuir 100% fraises</h1>
 
-<!-- En-tête avec l'image de référence cliquable pour revenir à l'accueil -->
-<header>
-    <a href="index.html">
-        <img src="IMG-20241118-WA0000.jpg" alt="Retour à l'accueil - Le Verger de l'Escampette">
-    </a>
-</header>
+        <!-- Image de la section spécifique -->
+        <img src="cuir fraise sans sucre.jpg" alt="Nos cuir 100% fraises" class="product-image">
 
-<!-- Contenu principal -->
-<div class="content">
-    <!-- Titre de la section -->
-    <h1>[Nom du Produit ou de la Section]</h1>
+        <!-- Description du produit -->
+        <div class="description">
+            <p><strong><span class="fraise">Le « cuir » 100% fraises</span></strong> est obtenu à partir des <span class="fraise">fraises estivales certifiées <span class="bio">AB</span></span> de la ferme. 
+            Celles-ci sont soigneusement cueillies et choisies pour leurs <strong>qualités gustatives</strong>.</p>
 
-    <!-- Image de la section spécifique -->
-    <img src="[nom_image_section.jpg]" alt="[Nom du Produit]" class="product-image">
+            <p>Le « cuir » 100% fraises, sans aucun ajout, révèle le pétillant et la force de nos fruits.<br> 
+            Que le <span class="sucre">sucre</span> et l'acidulé de la <span class="fraise">fraise</span> concentrés pour votre plaisir!</p>
 
-    <!-- Description du produit ou de la section -->
-    <div class="description">
-        <p>[Description détaillée du produit, ses caractéristiques, ses ingrédients, ou tout autre texte explicatif pertinent pour le produit.]</p>
+            <p>Nos <strong>boîtes en fer blanc</strong> sont fabriquées en Allemagne.<br> 
+            De taille moyenne, <strong>3 cm de haut</strong> et <strong>7,6 cm de diamètre</strong>, elles feront un joli cadeau <strong>artisanal</strong> et <strong>original</strong> pour les fêtes.</p>
+        </div>
+
+        <!-- Quantité et prix -->
+        <div class="quantities">
+            <p><strong><span class="fraise">Boîte blanche</span> ou <span class="fraise">rouge :</span></strong> 6,5 €<br>
+            <strong>Frais de port en sus</strong>, nous contacter pour les déterminer.<br>
+            <strong>Ingrédients :</strong> <span class="fraise">Fraises</span>, <span class="sucre">Sucre</span></p>
+        </div>
     </div>
 
-    <!-- Quantité et prix -->
-    <div class="quantities">
-        <p>[Exemple : 6,5€ la boîte]</p>
-    </div>
-</div>
-
-<!-- Pied de page avec les informations de contact -->
-<footer>
-    <p>Contactez-nous : <a href="mailto:ferme.lescampette@orange.fr">ferme.lescampette@orange.fr</a></p>
-    <p>07 89 53 11 66</p>
-</footer>
+    <!-- Pied de page -->
+    <footer>
+        <p>Le verger de l'Escampette © 2024 Ferme Bio. Tous droits réservés.<br>Contact : 
+            <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a> - Tel : 07 89 53 11 66
+        </p>
+    </footer>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+       </div>
+       </div>
 
 </body>
 </html>
