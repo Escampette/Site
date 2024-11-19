@@ -6,35 +6,43 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
 header, footer {
     background-color: #f4f4f4;
     padding: 10px;
     text-align: center;
 }
+
 header img {
-    width: 150px; /* Ajuster la taille si nécessaire */
+    width: 150px;
     margin-bottom: 10px;
 }
+
 .content {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
 }
+
 h1 {
     font-size: 1.8em;
-    color: #b22222; /* Couleur rouge spécifique pour le titre */
+    color: #b22222;
     text-align: center;
 }
+
+/* Styles pour les sections spécifiques */
 .product-image {
     width: 25%;
     max-width: 150px;
     display: block;
     margin: 5px auto;
 }
+
 .description {
     font-size: 1.1em;
     margin: 20px 0;
 }
+
 .quantities {
     font-size: 1.2em;
     font-weight: bold;
@@ -42,100 +50,83 @@ h1 {
     color: #555;
     margin: 20px 0;
 }
+
 footer {
     font-size: 0.9em;
     color: #666;
 }
 
-/* Styles spécifiques pour les fraises et le sucre */
+/* Styles spécifiques pour les éléments de couleur */
 .fraise {
-    color: #b22222; /* Rouge spécifique pour les termes relatifs aux fraises */
+    color: #b22222;
     font-weight: bold;
 }
+
 .sucre {
-    color: #d3d3d3; /* Gris clair pour les termes relatifs au sucre */
+    color: #d3d3d3;
     font-weight: bold;
 }
+
 .bio {
-    color: #006400; /* Vert foncé */
+    color: #006400;
     font-weight: bold;
 }
+
 .framboise {
-    color: #9B2D20; /* Framboise avec une touche de violet */
+    color: #9B2D20;
     font-weight: bold;
 }
 
 .muroise {
-    color: #6A2C7E; /* Mûre claire */
+    color: #6A2C7E;
     font-weight: bold;
 }
 
-/* Styles pour l'email en rouge */
 .email {
-    color: #b22222; /* Rouge foncé pour l'adresse e-mail */
+    color: #b22222;
     font-weight: bold;
-    text-decoration: none; /* Supprime le soulignement si souhaité */
+    text-decoration: none;
 }
 
 /* Style pour le carrousel */
 .carousel-container {
     position: relative;
-    width: 100%; /* Ajuste la taille du carrousel en fonction de la largeur du conteneur */
-    overflow: hidden; /* Cache les images qui dépassent */
+    width: 100%;
+    overflow: hidden;
 }
 
 .carousel {
-    display: flex; /* Aligne les images sur une ligne */
-    transition: transform 0.5s ease; /* Transition pour un déplacement fluide */
-    will-change: transform; /* Optimise l'animation */
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+    animation: carousel-animation 24s infinite;
 }
 
-/* Style des images */
 .carousel img {
-    width: 100%; /* Les images prennent toute la largeur du conteneur */
-    height: 300px; /* Ajustez la hauteur selon vos besoins */
-    object-fit: cover; /* Maintient l'aspect des images tout en remplissant l'espace */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     display: block;
 }
 
 /* Animation automatique du carrousel */
 @keyframes carousel-animation {
-    0% {
-        transform: translateX(0);
-    }
-    20% {
-        transform: translateX(0);
-    }
-    25% {
-        transform: translateX(-100%);
-    }
-    45% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    70% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-300%);
-    }
-    100% {
-        transform: translateX(-300%);
-    }
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(-300%); }
 }
 
-/* Appliquez l'animation */
-.carousel {
-    animation: carousel-animation 24s infinite;
-}
-
+/* Menu */
 .menu {
     text-align: center;
     margin-top: 20px;
 }
-/* Menu */
+
 .menu ul {
     list-style-type: none;
     padding: 0;
@@ -151,11 +142,86 @@ footer {
 }
 
 .menu img {
-    width: 100px; /* Ajustez la taille des images selon votre préférence */
+    width: 100px;
     height: auto;
-    transition: transform 0.3s ease; /* Effet de transition pour agrandir l'image au survol */
+    transition: transform 0.3s ease;
 }
 
 .menu img:hover {
-    transform: scale(1.1); /* Agrandit légèrement l'image au survol */
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+
+/* Pour les grands écrans */
+@media (min-width: 1024px) {
+    .carousel img {
+        height: 400px; /* Taille des images adaptée aux grands écrans */
+    }
+
+    .content {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Pour les écrans moyens */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .carousel img {
+        height: 350px;
+    }
+
+    .menu img {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Pour les petits écrans (smartphones) */
+@media (max-width: 768px) {
+    .carousel img {
+        height: 200px;
+    }
+
+    .content {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .menu img {
+        width: 60px;
+    }
+
+    .quantities {
+        font-size: 1em;
+    }
+}
+
+/* Pour les très petits écrans (téléphones anciens) */
+@media (max-width: 480px) {
+    .carousel img {
+        height: 150px;
+    }
+
+    .content {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    .menu img {
+        width: 50px;
+    }
 }
