@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cliquable</title>
+    <style>
+        /* Conteneur principal */
+        .image-container {
+            position: relative;
+            width: 800px; /* Ajuste la largeur selon les besoins */
+            margin: 0 auto;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        
+        /* Style des zones cliquables */
+        .clickable-area {
+            position: absolute;
+            display: block;
+            background-color: rgba(255, 255, 255, 0.2); /* Couleur semi-transparente pour visualiser les zones */
+            cursor: pointer;
+        }
+
+        /* Zones cliquables */
+        .area-mi-confits { top: 500px; left: 150px; width: 200px; height: 200px; }
+        .area-cuir-sans-sucre { top: 500px; left: 450px; width: 200px; height: 200px; }
+        .area-cuir-sucre { top: 765px; left: 575px; width: 200px; height: 200px; }
+        .area-boites { top: 765px; left: 15px; width: 200px; height: 200px; }
+        .area-fraises { top: 765px; left: 300px; width: 200px; height: 200px; }
+        .area-contact { top: 10px; left: 0px; width: 100%; height: 200px; }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="IMG-20241118-WA0000.jpg" alt="Le Verger de l'Escampette">
+    
+    <!-- Zones cliquables -->
+    <a href="mi_confits.html" class="clickable-area area-mi-confits" title="Mi Confits"></a>
+    <a href="cuir_sans_sucre.html" class="clickable-area area-cuir-sans-sucre" title="Cuir sans Sucre"></a>
+    <a href="cuir_sucre.html" class="clickable-area area-cuir-sucre" title="Cuir Sucre"></a>
+    <a href="boites.html" class="clickable-area area-boites" title="Boîtes"></a>
+    <a href="fraises.html" class="clickable-area area-fraises" title="Fraises"></a>
+    <a href="contact.html" class="clickable-area area-contact" title="Contact"></a>
+</div>
+
+</body>
+</html>
