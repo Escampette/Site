@@ -58,27 +58,27 @@ footer {
 
 /* Couleurs en HEX complètes */
 .fraise {
-    color: #B22222; /* Rouge plus intense pour "fraise" */
+    color: #B22222;
 }
 
 .sucre {
-    color: #D3D3D3; /* Gris clair pour "sucre" */
+    color: #D3D3D3;
 }
 
 .bio {
-    color: #006400; /* Vert foncé pour "bio" */
+    color: #006400;
 }
 
 .framboise {
-    color: #9B2D20; /* Couleur framboise */
+    color: #9B2D20;
 }
 
 .muroise {
-    color: #6A2C7E; /* Couleur mûre */
+    color: #6A2C7E;
 }
 
 .email {
-    color: #B22222; /* Rouge foncé pour l'email */
+    color: #B22222;
 }
 
 /* Style pour le carrousel */
@@ -149,7 +149,7 @@ footer {
 /* Grands écrans */
 @media (min-width: 1024px) {
     .carousel img {
-        height: 400px; /* Taille des images adaptée aux grands écrans */
+        height: 400px;
     }
 
     .content {
@@ -183,20 +183,20 @@ footer {
     }
 
     .content {
-        font-size: 0.9rem;
+        font-size: 0.85rem; /* Réduit légèrement la taille du texte */
         padding: 10px;
     }
 
     h1 {
-        font-size: 1.6em;
+        font-size: 1.5em;
+    }
+
+    .description, .quantities, footer {
+        font-size: 0.9rem; /* Réduction de la taille du texte */
     }
 
     .menu img {
         width: 60px;
-    }
-
-    .quantities {
-        font-size: 1em;
     }
 }
 
@@ -207,7 +207,7 @@ footer {
     }
 
     .content {
-        font-size: 0.8rem;
+        font-size: 0.75rem; /* Réduction maximale du texte pour les très petits écrans */
     }
 
     h1 {
@@ -216,5 +216,9 @@ footer {
 
     .menu img {
         width: 50px;
+    }
+
+    .description, .quantities, footer {
+        font-size: 0.8rem;
     }
 }
