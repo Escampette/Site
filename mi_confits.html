@@ -3,91 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de [Nom du Produit]</title>
-    <style>
-        /* Styles de base */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-        }
-        header, footer {
-            background-color: #f4f4f4;
-            padding: 10px;
-            text-align: center;
-        }
-        header img {
-            width: 150px; /* Ajuster la taille si nécessaire */
-            margin-bottom: 10px;
-        }
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 1.8em;
-            color: #333;
-            text-align: center;
-        }
-        .product-image {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-        }
-        .description {
-            font-size: 1.1em;
-            margin: 20px 0;
-        }
-        .quantities {
-            font-size: 1.2em;
-            font-weight: bold;
-            text-align: center;
-            color: #555;
-            margin: 20px 0;
-        }
-        footer {
-            font-size: 0.9em;
-            color: #666;
-        }
-    </style>
+    <title>Nos fraises mi-confits</title>
+    <!-- Lien vers le fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- En-tête avec l'image de référence cliquable pour revenir à l'accueil -->
-<header>
-    <a href="index.html">
-        <img src="IMG-20241118-WA0000.jpg" alt="Retour à l'accueil - Le Verger de l'Escampette">
-    </a>
-</header>
+    <!-- En-tête -->
+    <header>
+        <img src="IMG-20241118-WA0000.jpg" alt="Logo de la ferme">
+       <!--  <h1>Bienvenue à la Ferme</h1>-->
+    </header>
 
-<!-- Contenu principal -->
-<div class="content">
-    <!-- Titre de la section -->
-    <h1>[Nom du Produit ou de la Section]</h1>
+    <!-- Contenu principal -->
+    <div class="content">
+        <!-- Titre de la section -->
+        <h1 class="section-title">Nos fraises mi-confits</h1>
 
-    <!-- Image de la section spécifique -->
-    <img src="[nom_image_section.jpg]" alt="[Nom du Produit]" class="product-image">
+        <!-- Image de la section spécifique -->
+        <img src="miconf.png" alt="Nos fraises mi-confits" class="product-image">
 
-    <!-- Description du produit ou de la section -->
-    <div class="description">
-        <p>[Description détaillée du produit, ses caractéristiques, ses ingrédients, ou tout autre texte explicatif pertinent pour le produit.]</p>
+        <!-- Description du produit ou de la section -->
+        <div class="description">
+            <p><strong><span class="fraise">Nos fraises mi-confits</span></strong> sont élaborées à partir des <span class="fraise">fraises</span> estivales certifiées <strong>AB</strong> de la ferme. 
+            Celles-ci sont soigneusement cueillies et choisies pour leurs <strong>qualités gustatives</strong>.</p>
+
+            <p>Les <span class="fraise">fraises mi-confits</span> révèlent toutes les saveurs de nos fruits du verger : <strong>sucrées, fondantes et pétillantes !</strong></p>
+
+            <p>Nos <strong>boîtes en fer blanc</strong> sont fabriquées en Allemagne.<br> 
+            De taille moyenne, <strong>3 cm de haut</strong> et <strong>7,6 cm de diamètre</strong>, elles feront un joli cadeau <strong>artisanal</strong> et <strong>original</strong> pour les fêtes.</p>
+        </div>
+
+        <!-- Quantité et prix -->
+        <div class="quantities">
+            <p><strong>Boîte blanche ou rouge :</strong> 6,5 €<br>
+            <strong>Frais de port en sus</strong>, nous contacter pour les déterminer.<br>
+            <strong>Ingrédients :</strong> <span class="fraise">Fraises</span>, <span class="sucre">Sucre</span></p>
+        </div>
     </div>
 
-    <!-- Quantité et prix -->
-    <div class="quantities">
-        <p>[Exemple : 6,5€ la boîte]</p>
-    </div>
-</div>
-
-<!-- Pied de page avec les informations de contact -->
+<!-- Pied de page -->
 <footer>
-    <p>Contactez-nous : <a href="mailto:ferme.lescampette@orange.fr">ferme.lescampette@orange.fr</a></p>
-    <p>07 89 53 11 66</p>
+    <p>Le verger de l'Escampette © 2024 Ferme Bio. Tous droits réservés.<br>Contact : 
+        <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a> - Tel : 07 89 53 11 66
+    </p>
 </footer>
+
 
 </body>
 </html>
