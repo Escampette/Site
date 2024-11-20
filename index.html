@@ -1,136 +1,78 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Le Verger de L’Escampette</title>
-        <!-- Lien vers le fichier CSS externe -->
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-    
-        <!-- Carrousel d'images -->
-        <div class="carousel">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-       </div>
-            <!-- Menu de navigation sous le carrousel -->
-            <div class="menu">
-                <ul>
-                    <li><a href="mi_confits.html" class="area-mi-confits" title="Mi Confits"><img src="confit.png" alt="Mi Confits"></a></li>
-                    <li><a href="cuir_sans_sucre.html" class="area-cuir-sans-sucre" title="Cuir sans Sucre"><img src="cuir fraise sans sucre.jpg" alt="Cuir sans Sucre"></a></li>
-                    <li><a href="cuir_sucre.html" class="area-cuir-sucre" title="Cuir Sucre"><img src="cuir fraises sucre.jpg" alt="Cuir Sucre"></a></li>
-                    <li><a href="boites.html" class="area-boites" title="Boîtes"><img src="boitetemp.png" alt="Boîtes"></a></li>
-                    <li><a href="fraises.html" class="area-fraises" title="Fraises"><img src="fraises.png" alt="Fraises"></a></li>
-                    <li><a href="contact.html" class="area-contact" title="Contact"><img src="2.jpg" alt="Contact"></a></li>
-                </ul>
-            </div>
-            <script src="script.js"></script>
-    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Verger de L’Escampette</title>
+    <style>
+        /* Style général pour le centrage */
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Hauteur complète de l'écran */
+            background-color: #f5f5f5; /* Couleur de fond */
+            overflow: hidden; /* Supprime tout défilement */
+            flex-direction: column; /* Aligner le contenu de manière verticale */
+        }
+
+        /* Style pour le titre */
+        .catalogue-title {
+            text-align: center;
+            background-color: #D32F2F; /* Rouge vif pour Noël */
+            color: white; /* Texte en blanc */
+            padding: 20px 0; /* Espacement autour du titre */
+            width: 100%; /* S'assure que le titre occupe toute la largeur */
+        }
+
+        .catalogue-title h1 {
+            font-size: 2.5em; /* Taille du texte */
+            font-family: 'Arial', sans-serif; /* Police moderne */
+            margin: 0; /* Pas de marge par défaut */
+        }
+
+        /* Style pour l'image */
+        .description img {
+            width: 100vw; /* L'image occupe 100% de la largeur de l'écran */
+            height: auto; /* Conserve les proportions de l'image */
+            object-fit: contain; /* Conserve les proportions de l'image sans la déformer */
+            max-height: 100vh; /* L'image ne dépassera pas la hauteur de l'écran */
+            display: block; /* Assure que l'image est un élément de bloc et occupe toute la largeur disponible */
+        }
+
+        /* Ajout d'une règle de style pour rendre l'interface plus réactive */
+        @media (max-width: 768px) {
+            .catalogue-title h1 {
+                font-size: 1.8em; /* Taille de texte réduite sur les petits écrans */
+            }
+        }
+    </style>
+    <script>
+        // Redirection automatique après 3 secondes
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "index2.html"; // URL cible
+            }, 3000); // Délai en millisecondes (3 secondes)
+        };
+    </script>
+</head>
+<body>
+    <!-- Titre du Catalogue Noël 2024 (positionné tout en haut) -->
+    <div class="catalogue-title">
+        <h1>🎄 Catalogue Noël 2024 🎁</h1>
+    </div>
+
     <!-- Contenu principal -->
     <div class="content">
-        <!-- Titre de la section -->
-        <h1 class="section-title">Le Verger de L’Escampette c’est :</h1>
-
         <!-- Description du verger -->
         <div class="description">
-            <ul>
-                <li><strong>Près d’1,5 hectare de verger de petits fruits et arbres fruitiers en <span class="bio">Agriculture Biologique</span> et <span class="bio">Agroforesterie</span>.</strong></li>
-                <li><strong>1 équipe animée dans un projet ambitieux mais entraînant, novateur et écologiquement sain.</strong></li>
-                <li><strong>2 ânes pour travailler euh….. brouter les zones boisées, les intercultures et les futures zones de plantations.</strong></li>
-                <li><strong>Des milliers de plants de <span class="fraise">fraisiers</span>.</strong></li>
-                <li><strong>Des centaines de pieds de <span class="fraise">framboisiers</span>.</strong></li>
-                <li><strong>Des dizaines de pieds de groseillers, caseillers, cassissiers, amélanchiers,…</strong></li>
-                <li><strong>Mais aussi des arbres fruitiers tels que pommiers, poiriers, pruniers et figuiers.</strong></li>
-            </ul>
-        </div>
-
-        <!-- Localisation du verger -->
-        <div class="localisation">
-            <p><strong>Le Verger se situe à Val de Fier (Vallières sur Fier, 74).</strong></p>
-        </div>
-
-        <!-- Informations de contact -->
-        <div class="contact">
-            <p><strong>Pour tout renseignement ou commande:</strong><br>
-            <p><strong>Téléphone :</strong> 07 89 53 11 66<br>
-            <strong>Email :</strong> <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a><br>
-            <strong>Ou suivre notre actualité sur Facebook : <a href="https://www.facebook.com/profile.php?id=100080844615090" target="_blank" class="email">L'escampette</a>
-            </strong></p>
+            <a href="index2.html" title="Catalogue Noël">
+                <img src="page accueil catalogue noel 2024 2.jpg" 
+                     alt="Page Accueil Catalogue Noël 2024">
+            </a>
         </div>
     </div>
-
-    <!-- Pied de page -->
-    <footer>
-        <p>Le verger de l'Escampette © 2024 Ferme Bio. Tous droits réservés.<br>Contact : 
-            <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a> - Tel : 07 89 53 11 66
-        </p>
-    </footer>
-    <div class="carousel-container">
-        <div class="carousel">
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9">     
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9"> 
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9"> 
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9"> 
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9"> 
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9"> 
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9"> 
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9"> 
-        <img src="7.jpg" alt="Image 7">
-        <img src="8.jpg" alt="Image 8">
-        <img src="9.jpg" alt="Image 9">             
-        </div>
-    </div>
-
 </body>
 </html>

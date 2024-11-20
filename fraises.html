@@ -1,90 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Marchés de Noël et Cueillette Libre</title>
-    <!-- Lien vers le fichier CSS externe -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="carousel-container">
-        <div class="carousel">
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9">     
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9"> 
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9"> 
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9"> 
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9"> 
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9"> 
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9"> 
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9"> 
-            <img src="7.jpg" alt="Image 7">
-            <img src="8.jpg" alt="Image 8">
-            <img src="9.jpg" alt="Image 9">             
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Le Verger de L’Escampette</title>
+        <!-- Lien vers le fichier CSS externe -->
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Style global */
+            body, html {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                height: 100%;
+                background-color: #f5f5f5;
+            }
+    
+            /* Header avec bordereau et image */
+            header {
+                width: 50%;
+                text-align: center;
+                padding: 0;
+                position: relative;
+            }
+    
+    
+            /* Centrage de l'image en petit */
+            .header-image {
+                width: 150px; /* Taille de l'image en petit */
+                height: auto;
+                object-fit: contain;
+                margin-top: 30px; /* Espacement entre le bordereau et l'image */
+            }
+    
+        
+    
+            /* Style responsive pour petits écrans */
+            @media (max-width: 768px) {
+                .catalogue-title h1 {
+                    font-size: 1.2em;
+                }
+    
+                .header-image {
+                    width: 120px; /* Taille encore plus petite pour mobile */
+                }
+            }
+        </style>
+    </head>
+    <body>
+    
+            
+            <!-- Image d'accueil réduite -->
+            <img src="page accueil catalogue noel 2024 2.jpg" alt="Nos fraises mi-confits" class="header-image">
+        </header>
+    </head>
+    <body>
+    
+            <!-- Menu de navigation sous le carrousel -->
+            <div class="menu">
+                <ul>
+                    <li><a href="mi_confits.html" class="area-mi-confits" title="Mi Confits"><img src="confit.png" alt="Mi Confits"></a></li>
+                    <li><a href="cuir_sans_sucre.html" class="area-cuir-sans-sucre" title="Cuir sans Sucre"><img src="cuir fraise sans sucre.jpg" alt="Cuir sans Sucre"></a></li>
+                    <li><a href="cuir_sucre.html" class="area-cuir-sucre" title="Cuir Sucre"><img src="cuir fraises sucre.jpg" alt="Cuir Sucre"></a></li>
+                    <li><a href="boites.html" class="area-boites" title="Boîtes"><img src="boitetemp.png" alt="Boîtes"></a></li>
+                    <li><a href="fraises.html" class="area-fraises" title="Fraises"><img src="fraises.png" alt="Fraises"></a></li>
+                </ul>
+            </div>
 
-    <!-- Menu de navigation sous le carrousel -->
-    <div class="menu">
-        <ul>
-            <li><a href="mi_confits.html" class="area-mi-confits" title="Mi Confits"><img src="confit.png" alt="Mi Confits"></a></li>
-            <li><a href="cuir_sans_sucre.html" class="area-cuir-sans-sucre" title="Cuir sans Sucre"><img src="cuir fraise sans sucre.jpg" alt="Cuir sans Sucre"></a></li>
-            <li><a href="cuir_sucre.html" class="area-cuir-sucre" title="Cuir Sucre"><img src="cuir fraises sucre.jpg" alt="Cuir Sucre"></a></li>
-            <li><a href="boites.html" class="area-boites" title="Boîtes"><img src="boitetemp.png" alt="Boîtes"></a></li>
-            <li><a href="fraises.html" class="area-fraises" title="Fraises"><img src="fraises.png" alt="Fraises"></a></li>
-            <li><a href="contact.html" class="area-contact" title="Contact"><img src="2.jpg" alt="Contact"></a></li>
-        </ul>
-    </div>
-    <script src="script.js"></script>
-
+    
     <!-- Contenu principal -->
     <div class="content">
-        <h1 class="section-title">Nos Marchés de Noël et Cueillette Libre</h1>
+        <!-- Titre de la section -->
+        <h1 class="section-title">Le Verger de L’Escampette c’est :</h1>
 
-        <!-- Description des marchés de Noël -->
-        <div class="marches-de-noel">
-            <p>Venez nous retrouver sur les marchés de Noël en Savoie à ces dates fictives :</p>
+        <!-- Description du verger -->
+        <div class="description">
             <ul>
-                <li><strong>Marché de Noël de Chambéry :</strong> 2, 3 et 4 décembre 2024, Place de la Gare</li>
-                <li><strong>Marché de Noël d'Aix-les-Bains :</strong> 9, 10 et 11 décembre 2024, Place des Eléphants</li>
-                <li><strong>Marché de Noël de Modane :</strong> 16, 17 et 18 décembre 2024, Centre-ville</li>
-                <li><strong>Marché de Noël de Saint-Jean-de-Maurienne :</strong> 23, 24 et 25 décembre 2024, Place de l'Hotel de Ville</li>
+                <li><strong>Près d’1,5 hectare de verger de petits fruits et arbres fruitiers en <span class="bio">Agriculture Biologique</span> et <span class="bio">Agroforesterie</span>.</strong></li>
+                <li><strong>1 équipe animée dans un projet ambitieux mais entraînant, novateur et écologiquement sain.</strong></li>
+                <li><strong>2 ânes pour travailler euh….. brouter les zones boisées, les intercultures et les futures zones de plantations.</strong></li>
+                <li><strong>Des milliers de plants de <span class="fraise">fraisiers</span>.</strong></li>
+                <li><strong>Des centaines de pieds de <span class="fraise">framboisiers</span>.</strong></li>
+                <li><strong>Des dizaines de pieds de groseillers, caseillers, cassissiers, amélanchiers,…</strong></li>
+                <li><strong>Mais aussi des arbres fruitiers tels que pommiers, poiriers, pruniers et figuiers.</strong></li>
             </ul>
-            <p>Venez découvrir nos produits artisanaux et nos boîtes festives, ainsi que nos délicieuses confitures dans une ambiance chaleureuse et conviviale !</p>
         </div>
 
-        <!-- Description des jours de cueillette libre -->
-        <div class="cueillette-libre">
-            <p>Nous vous offrons également des jours de <strong>cueillette libre</strong> au verger pour profiter des fruits frais et goûter à nos produits en direct :</p>
-            <ul>
-                <li><strong>Samedi 1er juin 2024 :</strong> Cueillette libre de <span class="fraise">fraises</span> et <span class="fraise">framboises</span></li>
-                <li><strong>Dimanche 2 juin 2024 :</strong> Cueillette libre de <span class="fraise">fraises</span>, <span class="fraise">framboises</span> et <span class="fraise">mûres</span></li>
-                <li><strong>Samedi 8 juin 2024 :</strong> Cueillette libre de <span class="fraise">fraises</span> et <span class="fraise">groseilles</span></li>
-                <li><strong>Dimanche 9 juin 2024 :</strong> Cueillette libre de <span class="fraise">fraises</span> et <span class="fraise">mûroises</span></li>
-            </ul>
-            <p>Venez passer un moment agréable au Verger de l'Escampette pour cueillir vos fruits et en apprendre davantage sur notre démarche en Agriculture Biologique.</p>
+        <!-- Localisation du verger -->
+        <div class="localisation">
+            <p><strong>Le Verger se situe à Val de Fier (Vallières sur Fier, 74).</strong></p>
         </div>
 
-        <!-- Informations de contact pour les marchés et la cueillette -->
+        <!-- Informations de contact -->
         <div class="contact">
-            <p><strong>Pour plus d'informations ou pour réserver votre place pour la cueillette libre, contactez-nous :</strong></p>
-            <p><strong>Téléphone :</strong> 07 89 53 11 66</p>
-            <p><strong>Email :</strong> <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a></p>
+            <p><strong>Pour tout renseignement ou commande:</strong><br>
+            <p><strong>Téléphone :</strong> 07 89 53 11 66<br>
+            <strong>Email :</strong> <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a><br>
+            <strong>Ou suivre notre actualité sur Facebook : <a href="https://www.facebook.com/profile.php?id=100080844615090" target="_blank" class="email">L'escampette</a>
+            </strong></p>
         </div>
     </div>
 
@@ -94,46 +111,5 @@
             <a href="mailto:ferme.lescampette@orange.fr" class="email">ferme.lescampette@orange.fr</a> - Tel : 07 89 53 11 66
         </p>
     </footer>
-    <div class="carousel-container">
-        <div class="carousel">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-            <img src="1.jpg" alt="Image 1">
-            <img src="2.jpg" alt="Image 2">
-            <img src="3.jpg" alt="Image 3">
-            <img src="4.jpg" alt="Image 4">
-            <img src="5.jpg" alt="Image 5">
-            <img src="6.jpg" alt="Image 6">
-       </div>
-       </div>
-
 </body>
 </html>

@@ -53,7 +53,7 @@ h1 {
 
 /* Styles pour les sections spécifiques */
 .product-image {
-    width: 25%;
+    width: 100%;
     max-width: 150px;
     display: block;
     margin: 5px auto;
@@ -243,3 +243,27 @@ footer {
         font-size: 0.8rem;
     }
 }
+
+        /* Header avec bordereau et image */
+        header {
+            width: 50%;
+            text-align: center;
+            padding: 0;
+            position: relative;
+        }
+
+
+        /* Centrage de l'image en petit */
+        .header-image {
+            width: 150px; /* Taille de l'image en petit */
+            height: auto;
+            object-fit: contain;
+            margin-top: 30px; /* Espacement entre le bordereau et l'image */
+        }   
+
+        /* Style responsive pour petits écrans */
+        @media (max-width: 768px) {
+            .header-image {
+                width: 120px; /* Taille encore plus petite pour mobile */
+            }
+        }
