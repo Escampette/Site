@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogue Noël 2024</title>
+    <title>Nos différentes boîtes et nos confitures</title>
     <!-- Lien vers le fichier CSS externe -->
     <link rel="stylesheet" href="style.css">
     <style>
@@ -36,24 +36,28 @@
             margin-top: 30px; /* Espacement entre le bordereau et l'image */
         }
 
-        /* Style pour les images du menu : agrandir les images de 2x */
-        .menu img {
-            width: 200px; /* Taille agrandie des images du menu */
-            height: auto;
-            object-fit: contain;
+        /* Style pour le menu avec des images prenant toute la largeur */
+        .menu {
+            width: 100%;
         }
 
-        /* Style pour les éléments du menu */
         .menu ul {
-            list-style: none;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             padding: 0;
-            margin: 20px 0;
+            margin: 0;
+            list-style: none;
         }
 
         .menu li {
-            margin: 0 20px; /* Espacement entre les images */
+            flex: 1;
+            text-align: center;
+        }
+
+        .menu img {
+            width: 100%; /* Prendre toute la largeur du conteneur */
+            height: auto; /* Conserver les proportions */
+            object-fit: cover; /* Recadrer les images sans déformation */
         }
 
         /* Style responsive pour petits écrans */
@@ -66,9 +70,9 @@
                 width: 120px; /* Taille encore plus petite pour mobile */
             }
 
-            /* Ajuster la taille des images du menu pour les petits écrans */
             .menu img {
-                width: 120px; /* Taille plus petite des images sur mobile */
+                width: 100%;
+                height: auto;
             }
         }
     </style>
@@ -76,8 +80,10 @@
 <body>
 
     <!-- Image d'accueil réduite -->
-    <img src="page accueil catalogue noel 2024 2.jpg" alt="Nos fraises mi-confits" class="header-image">
-    
+    <header>
+        <img src="page accueil catalogue noel 2024 2.jpg" alt="Nos fraises mi-confits" class="header-image">
+    </header>
+
     <!-- Menu de navigation sous le header -->
     <div class="menu">
         <ul>
@@ -88,6 +94,8 @@
             <li><a href="fraises.html" class="area-fraises" title="Fraises"><img src="fraises.png" alt="Fraises"></a></li>
         </ul>
     </div>
+
+    <!-- Contenu principal -->
 
     <!-- Pied de page -->
     <footer>

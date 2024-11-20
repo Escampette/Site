@@ -8,47 +8,74 @@
         <link rel="stylesheet" href="style.css">
         <style>
             /* Style global */
-            body, html {
-                margin: 0;
-                padding: 0;
-                font-family: Arial, sans-serif;
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: center;
-                height: 100%;
-                background-color: #f5f5f5;
+        /* Style global */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            background-color: #f5f5f5;
+        }
+
+        /* Header avec bordereau et image */
+        header {
+            width: 50%;
+            text-align: center;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Centrage de l'image en petit */
+        .header-image {
+            width: 150px; /* Taille de l'image en petit */
+            height: auto;
+            object-fit: contain;
+            margin-top: 30px; /* Espacement entre le bordereau et l'image */
+        }
+
+        /* Style pour le menu avec des images prenant toute la largeur */
+        .menu {
+            width: 100%;
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .menu li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .menu img {
+            width: 100%; /* Prendre toute la largeur du conteneur */
+            height: auto; /* Conserver les proportions */
+            object-fit: cover; /* Recadrer les images sans déformation */
+        }
+
+        /* Style responsive pour petits écrans */
+        @media (max-width: 768px) {
+            .catalogue-title h1 {
+                font-size: 1.2em;
             }
-    
-            /* Header avec bordereau et image */
-            header {
-                width: 50%;
-                text-align: center;
-                padding: 0;
-                position: relative;
-            }
-    
-    
-            /* Centrage de l'image en petit */
+
             .header-image {
-                width: 150px; /* Taille de l'image en petit */
+                width: 120px; /* Taille encore plus petite pour mobile */
+            }
+
+            .menu img {
+                width: 100%;
                 height: auto;
-                object-fit: contain;
-                margin-top: 30px; /* Espacement entre le bordereau et l'image */
             }
-    
-        
-    
-            /* Style responsive pour petits écrans */
-            @media (max-width: 768px) {
-                .catalogue-title h1 {
-                    font-size: 1.2em;
-                }
-    
-                .header-image {
-                    width: 120px; /* Taille encore plus petite pour mobile */
-                }
-            }
+        }
         </style>
     </head>
     <body>

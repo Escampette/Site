@@ -28,7 +28,6 @@
             position: relative;
         }
 
-
         /* Centrage de l'image en petit */
         .header-image {
             width: 150px; /* Taille de l'image en petit */
@@ -37,7 +36,29 @@
             margin-top: 30px; /* Espacement entre le bordereau et l'image */
         }
 
-    
+        /* Style pour le menu avec des images prenant toute la largeur */
+        .menu {
+            width: 100%;
+        }
+
+        .menu ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .menu li {
+            flex: 1;
+            text-align: center;
+        }
+
+        .menu img {
+            width: 100%; /* Prendre toute la largeur du conteneur */
+            height: auto; /* Conserver les proportions */
+            object-fit: cover; /* Recadrer les images sans déformation */
+        }
 
         /* Style responsive pour petits écrans */
         @media (max-width: 768px) {
@@ -47,6 +68,11 @@
 
             .header-image {
                 width: 120px; /* Taille encore plus petite pour mobile */
+            }
+
+            .menu img {
+                width: 100%;
+                height: auto;
             }
         }
     </style>
